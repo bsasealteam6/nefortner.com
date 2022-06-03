@@ -536,3 +536,4 @@ googleAnalytics = 'G-7ZSFRQTX7E'
 [minify]
   disableXML = true
   minifyOutput = true
+
