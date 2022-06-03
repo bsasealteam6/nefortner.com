@@ -125,7 +125,7 @@ googleAnalytics = 'G-7ZSFRQTX7E'
       # whether to show social links
       social = true
       # uBlogger NEW | 0.2.0 disclaimer (HTML format is supported)
-      disclaimer = "This site may contain samples of code from malware for educational purposes only. The author does not take condone usage of this code for malicious means."
+      disclaimer = "This site may contain samples of code from malware for educational purposes only. The author does not condone usage of this code for malicious means."
     # Home page posts
     [params.home.posts]
       enable = true
