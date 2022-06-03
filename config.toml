@@ -2,7 +2,7 @@ baseURL = 'https://nefortner.com'
 languageCode = 'en-us'
 title = "Nate's Cybersecurity Blog"
 
-theme = 'uBlogger'
+theme = 'LoveIt'
 
 googleAnalytics = 'G-7ZSFRQTX7E'
 
