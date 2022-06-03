@@ -1,34 +1,26 @@
-baseURL = 'https://nefortner.com'
-languageCode = 'en-us'
-title = "Nate's Cybersecurity Blog"
-
-theme = 'uBlogger'
-
-googleAnalytics = 'G-7ZSFRQTX7E'
-
-
-
-
 [params]
-  author = 'Nate Fortner'
-  pathPrompt = 'nate@nefortner.com'
-  version = '2.0.X'
+  # uBlogger CHANGED | 0.2.0 uBlogger theme version
+  version = "1.3.X"
+  # site description
+  description = "This is My New Hugo Site"
+  # site keywords
+  keywords = ["Theme", "Hugo"]
+  # site default theme ("light", "dark", "auto")
+  defaultTheme = "auto"
+  # public git repo url only then enableGitInfo is true
+  gitRepo = ""
+  # uBlogger NEW | 0.1.1 which hash function used for SRI, when empty, no SRI is used
+  # ("sha256", "sha384", "sha512", "md5")
+  fingerprint = ""
+  # uBlogger NEW | 0.2.0 date format
+  dateFormat = "2006-01-02"
+  # website images for Open Graph and Twitter Cards
+  images = ["/logo.png"]
 
-  footerCopyrightName = 'Nate Fortner'
-  footerCopyrightLicense = 'CC BY 4.0'
-  footerCopyrightLicenseLink = 'https://creativecommons.org/licenses/by/4.0'
-  footerBuildTime = 'true'
-  footerAttributionLink = '/attribution'
-  
-  description = "Nate Fortner's personal blog"
-
-  defaultTheme = 'auto'
-
-  gitRepo = 'https://github.com/bsasealteam6/nefortner.com'
-
+  # uBlogger NEW | 0.2.0 App icon config
   [params.app]
     # optional site title override for the app when added to an iOS home screen or Android launcher
-    # title = "uBlogger"
+    title = "uBlogger"
     # whether to omit favicon resource links
     noFavicon = false
     # modern SVG favicon to use in place of older style .png and .ico files
@@ -39,6 +31,8 @@ googleAnalytics = 'G-7ZSFRQTX7E'
     iconColor = "#5bbad5"
     # Windows v8-10 tile color
     tileColor = "#da532c"
+
+  # uBlogger NEW | 0.2.0 Search config
   [params.search]
     enable = true
     # type of search engine ("lunr", "algolia")
@@ -59,7 +53,7 @@ googleAnalytics = 'G-7ZSFRQTX7E'
       index = ""
       appID = ""
       searchKey = ""
-  showPath = 'true'
+
   # Header config
   [params.header]
     # desktop header mode ("fixed", "normal", "auto")
@@ -71,7 +65,7 @@ googleAnalytics = 'G-7ZSFRQTX7E'
       # URL of the LOGO
       logo = ""
       # title name
-      name = "Nate's Cybersecurity Blog"
+      name = ""
       # you can add extra information before the name (HTML format is supported), such as icons
       pre = ""
       # you can add extra information after the name (HTML format is supported), such as icons
@@ -89,11 +83,13 @@ googleAnalytics = 'G-7ZSFRQTX7E'
     # uBlogger NEW | 0.2.0 whether to show the author
     author = true
     # Site creation time
-    since = 2022
+    since = 2019
     # ICP info only in China (HTML format is supported)
     icp = ""
     # license info (HTML format is supported)
     license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
+  # uBlogger NEW | 0.2.0 Section (all posts) page config
   [params.section]
     # special amount of posts in each section page
     paginate = 20
@@ -101,6 +97,8 @@ googleAnalytics = 'G-7ZSFRQTX7E'
     dateFormat = "01-02"
     # amount of RSS pages
     rss = 10
+
+  # uBlogger NEW | 0.2.0 List (category or tag) page config
   [params.list]
     # special amount of posts in each list page
     paginate = 20
@@ -108,6 +106,8 @@ googleAnalytics = 'G-7ZSFRQTX7E'
     dateFormat = "01-02"
     # amount of RSS pages
     rss = 10
+
+  # Home page config
   [params.home]
     # uBlogger NEW | 0.2.0 amount of RSS pages
     rss = 10
@@ -117,15 +117,15 @@ googleAnalytics = 'G-7ZSFRQTX7E'
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
-    #   avatarURL = "/images/avatar.png"
+      avatarURL = "/images/avatar.png"
       # uBlogger CHANGED | 0.2.7 title shown in home page (HTML format is supported)
       title = ""
       # subtitle shown in home page
-      subtitle = "Welcome to my blog"
+      subtitle = "This is My New Hugo Site"
       # whether to show social links
       social = true
       # uBlogger NEW | 0.2.0 disclaimer (HTML format is supported)
-      disclaimer = "This site may contain samples of code from malware for educational purposes only. The author does not take condone usage of this code for malicious means."
+      disclaimer = ""
     # Home page posts
     [params.home.posts]
       enable = true
@@ -134,72 +134,75 @@ googleAnalytics = 'G-7ZSFRQTX7E'
       # uBlogger DELETED | 0.2.0 replaced with hiddenFromHomePage in params.page
       # default behavior when you don't set "hiddenFromHomePage" in front matter
       defaultHiddenFromHomePage = false
-    # Social config about the author
+
+  # Social config about the author
   [params.social]
-    GitHub = "bsasealteam6"
-    Linkedin = "nefortner"
-    # Twitter = "xxxx"
-    # Instagram = "xxxx"
-    # Facebook = "xxxx"
-    # Telegram = "xxxx"
-    # Medium = ""
-    # Gitlab = ""
-    # Youtubelegacy = ""
-    # Youtubecustom = ""
-    # Youtubechannel = ""
-    # Tumblr = ""
-    # Quora = ""
-    # Keybase = ""
-    # Pinterest = ""
-    # Reddit = ""
-    # Codepen = ""
-    # FreeCodeCamp = ""
-    Bitbucket = "bsasealteam6"
-    # Stackoverflow = ""
-    # Weibo = ""
-    # Odnoklassniki = ""
-    # VK = ""
-    # Flickr = ""
-    # Xing = ""
-    # Snapchat = ""
-    # Soundcloud = ""
-    # Spotify = ""
-    # Bandcamp = ""
-    # Paypal = ""
-    # Fivehundredpx = ""
-    # Mix = ""
-    # Goodreads = ""
-    # Lastfm = ""
-    # Foursquare = ""
-    # Hackernews = ""
-    # Kickstarter = ""
-    # Patreon = ""
-    # Steam = ""
-    # Twitch = ""
-    # Strava = ""
-    # Skype = ""
-    # Whatsapp = ""
-    # Zhihu = ""
-    # Douban = ""
-    # Angellist = ""
-    # Slidershare = ""
-    # Jsfiddle = ""
-    # Deviantart = ""
-    # Behance = ""
-    # Dribbble = ""
-    # Wordpress = ""
-    # Vine = ""
-    # Googlescholar = ""
-    # Researchgate = ""
-    # Mastodon = ""
-    # Thingiverse = ""
-    # Devto = ""
-    # Gitea = ""
-    # XMPP = ""
-    # Matrix = ""
-    # Bilibili = ""
-    Email = "contact@nefortner.com"
+    GitHub = "xxxx"
+    Linkedin = ""
+    Twitter = "xxxx"
+    Instagram = "xxxx"
+    Facebook = "xxxx"
+    Telegram = "xxxx"
+    Medium = ""
+    Gitlab = ""
+    Youtubelegacy = ""
+    Youtubecustom = ""
+    Youtubechannel = ""
+    Tumblr = ""
+    Quora = ""
+    Keybase = ""
+    Pinterest = ""
+    Reddit = ""
+    Codepen = ""
+    FreeCodeCamp = ""
+    Bitbucket = ""
+    Stackoverflow = ""
+    Weibo = ""
+    Odnoklassniki = ""
+    VK = ""
+    Flickr = ""
+    Xing = ""
+    Snapchat = ""
+    Soundcloud = ""
+    Spotify = ""
+    Bandcamp = ""
+    Paypal = ""
+    Fivehundredpx = ""
+    Mix = ""
+    Goodreads = ""
+    Lastfm = ""
+    Foursquare = ""
+    Hackernews = ""
+    Kickstarter = ""
+    Patreon = ""
+    Steam = ""
+    Twitch = ""
+    Strava = ""
+    Skype = ""
+    Whatsapp = ""
+    Zhihu = ""
+    Douban = ""
+    Angellist = ""
+    Slidershare = ""
+    Jsfiddle = ""
+    Deviantart = ""
+    Behance = ""
+    Dribbble = ""
+    Wordpress = ""
+    Vine = ""
+    Googlescholar = ""
+    Researchgate = ""
+    Mastodon = ""
+    Thingiverse = ""
+    Devto = ""
+    Gitea = ""
+    XMPP = ""
+    Matrix = ""
+    Bilibili = ""
+    Email = "xxxx@xxxx.com"
     RSS = true # uBlogger NEW | 0.2.0
+
+  # uBlogger CHANGED | 0.2.0 Page config
   [params.page]
     # uBlogger NEW | 1.0.0 main subject for articles, by default classic. more on themes}
     theme = "classic"
@@ -293,12 +296,12 @@ googleAnalytics = 'G-7ZSFRQTX7E'
       enable = true
       Twitter = true
       Facebook = true
-      Linkedin = true
+      Linkedin = false
       Whatsapp = true
       Pinterest = false
       Tumblr = false
-      HackerNews = true
-      Reddit = true
+      HackerNews = false
+      Reddit = false
       VK = false
       Buffer = false
       Xing = false
@@ -308,9 +311,9 @@ googleAnalytics = 'G-7ZSFRQTX7E'
       Digg = false
       Stumbleupon = false
       Flipboard = false
-      Weibo = false
+      Weibo = true
       Renren = false
-      Myspace = false
+      Myspace = true
       Blogger = true
       Baidu = false
       Odnoklassniki = false
@@ -338,9 +341,10 @@ googleAnalytics = 'G-7ZSFRQTX7E'
       [params.page.seo.publisher]
         name = ""
         logoUrl = ""
-  #Comment settings (Currently Disabled)
-  [params.comment]
-      enable = false
+
+    # uBlogger CHANGED | 1.1.0 Comment config
+    [params.comment]
+      enable = true
       # uBlogger NEW | 1.0.0
       # Remark42 comment config
       [params.comment.remark42]
@@ -419,42 +423,51 @@ googleAnalytics = 'G-7ZSFRQTX7E'
         label = ""
         lightTheme = "github-light"
         darkTheme = "github-dark"
+
+  # Site verification code config for Google/Bing/Yandex/Pinterest/Baidu
   [params.verification]
-    # google = ""
-    # bing = ""
-    yandex = "ca384d573446707b"
-    pinterest = "f804419188f48bea11d15b5a9df82b8e"
-    # baidu = ""
+    google = ""
+    bing = ""
+    yandex = ""
+    pinterest = ""
+    baidu = ""
+
+  # uBlogger NEW | 0.2.10 Site SEO config
   [params.seo]
     # image URL
     image = ""
     # thumbnail URL
     thumbnailUrl = ""
+
+  # uBlogger NEW | 0.2.0 Analytics config
   [params.analytics]
-    enable = true
+    enable = false
     # Google Analytics
     [params.analytics.google]
-      id = "G-7ZSFRQTX7E"
-      gTag = "G-7ZSFRQTX7E"
+      id = ""
       # whether to anonymize IP
-      anonymizeIP = false
+      anonymizeIP = true
     # Fathom Analytics
-    # [params.analytics.fathom]
-    #   id = ""
-    #   # server url for your tracker if you're self hosting
-    #   server = ""
-    # # uBlogger NEW | 1.0.0
-    # # Yandex.Metrika
-    # [params.analytics.yandex]
-    #   # your meter number
-    #   id = ""
+    [params.analytics.fathom]
+      id = ""
+      # server url for your tracker if you're self hosting
+      server = ""
+    # uBlogger NEW | 1.0.0
+    # Yandex.Metrika
+    [params.analytics.yandex]
+      # your meter number
+      id = ""
+
+  # uBlogger NEW | 0.2.7 Cookie consent config
   [params.cookieconsent]
-    enable = false
+    enable = true
     # text strings used for Cookie consent banner
     [params.cookieconsent.content]
       message = ""
       dismiss = ""
       link = ""
+
+  # uBlogger CHANGED | 0.2.7 CDN config for third-party library files
   [params.cdn]
     # CDN data file name, disabled by default
     # ("jsdelivr.yml")
@@ -462,11 +475,14 @@ googleAnalytics = 'G-7ZSFRQTX7E'
     # you can store your own data files in the same path under your project:
     # "assets/data/cdn/"
     data = ""
+
+  # uBlogger NEW | 0.2.8 Compatibility config
   [params.compatibility]
     # whether to use Polyfill.io to be compatible with older browsers
     polyfill = false
     # whether to use object-fit-images to be compatible with older browsers
     objectFit = false
+
 # Markup related config in Hugo
 [markup]
   # Syntax Highlighting
@@ -493,47 +509,50 @@ googleAnalytics = 'G-7ZSFRQTX7E'
   # Table Of Contents settings
   [markup.tableOfContents]
     startLevel = 2
-    endLevel = 6  
-[mediaTypes]
-  [mediaTypes."text/plain"]
-    suffixes = ["md"]
+    endLevel = 6
 
-    
+# Author config
+# uBlogger CHANGED | 1.0.0
+[author]
+  name = "xxxx"
+
+# Sitemap config
 [sitemap]
   changefreq = "weekly"
   filename = "sitemap.xml"
   priority = 0.5
+
+# Permalinks config
+[Permalinks]
+  # posts = ":year/:month/:filename"
+  posts = ":filename"
+
+# Privacy config
 [privacy]
+  # uBlogger DELETED | 0.2.0 privacy of the Google Analytics (replaced by params.analytics.google)
+  [privacy.googleAnalytics]
+    # ...
   [privacy.twitter]
     enableDNT = true
   [privacy.youtube]
     privacyEnhanced = true
-[menu]
-  [[menu.main]]
-    identifier = 'posts'
-    pre = ''
-    post = ''
-    name = 'Posts'
-    url = '/posts/'
-    title = 'Blog Posts'
-    weight = 1
-  [[menu.main]]
-    identifier = 'about'
-    pre = ''
-    post = ''
-    name = 'About'
-    url = '/about/'
-    title = 'About Nate'
-    weight = 2
-  [[menu.main]]
-    identifier = 'resume'
-    pre = ''
-    post = ''
-    name = 'Resume'
-    url = '/resume/'
-    title = 'Nate Resume'
-    weight = 3
-[minify]
-  disableXML = true
-  minifyOutput = true
 
+# Options to make output .md files
+[mediaTypes]
+  [mediaTypes."text/plain"]
+    suffixes = ["md"]
+
+# Options to make output .md files
+[outputFormats.MarkDown]
+  mediaType = "text/plain"
+  isPlainText = true
+  isHTML = false
+
+# Options to make hugo output files
+[outputs]
+  # uBlogger CHANGED | 0.2.0
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML", "MarkDown"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  taxonomyTerm = ["HTML"]
