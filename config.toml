@@ -435,6 +435,7 @@ googleAnalytics = 'G-7ZSFRQTX7E'
     # Google Analytics
     [params.analytics.google]
       id = "G-7ZSFRQTX7E"
+      gTag = "G-7ZSFRQTX7E"
       # whether to anonymize IP
       anonymizeIP = false
     # Fathom Analytics
@@ -524,6 +525,14 @@ googleAnalytics = 'G-7ZSFRQTX7E'
     url = '/about/'
     title = 'About Nate'
     weight = 2
+  [[menu.main]]
+    identifier = 'resume'
+    pre = ''
+    post = ''
+    name = 'Resume'
+    url = '/resume/'
+    title = 'Nate Resume'
+    weight = 3
 [minify]
   disableXML = true
   minifyOutput = true
