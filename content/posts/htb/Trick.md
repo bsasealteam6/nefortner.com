@@ -2,7 +2,7 @@
 title: "Trick"
 date: 2022-10-06T12:03:22-07:00
 author: "Nate Fortner"
-draft: true
+draft: false
 ---
 # Opensource
 ## Initial Recon
