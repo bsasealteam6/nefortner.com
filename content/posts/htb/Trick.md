@@ -7,7 +7,7 @@ draft: true
 # Opensource
 ## Initial Recon
 ### nmap
-As is my goto for these, I ran nmap to see what was there, as well as adding `trick.htb` to my hosts file.  I used my normal script NmapAutomator (available here: [NmapAutomator](https://github.com/21y4d/nmapAutomator)) to run a battery of tests against it, including nmap (all types of scans), nikto, smtp user enum, and others.  From the results, I saw that it was running an OpenSSH 7.9 Debian ssh server on port 22 TCP, a postfix smtp server on port 25 TCP, a BIND9 dns server on 53 TCP and UDP, and a nginx 1.14.2 HTTP server on port 80.  It also discovered a CVE in the ssh version, SSHtranger Things, but that seemed completely irrelavent as it only applied to SCP client.
+As is my goto for these, I ran nmap to see what was there, as well as adding `trick.htb` to my hosts file.  I used my normal script NmapAutomator (available here: [NmapAutomator](https://github.com/21y4d/nmapAutomator)) to run a battery of tests against it, including nmap (all types of scans), nikto, smtp user enum, and others.  From the results, I saw that it was running an OpenSSH 7.9 Debian ssh server on port 22 TCP, a postfix smtp server on port 25 TCP, a `BIND9` dns server on port 53 TCP and UDP, and a `nginx 1.14.2` HTTP server on port 80.  It also discovered a CVE in the ssh version, SSHtranger Things, but that seemed completely irrelavent as it only applied to SCP client.
 ### Webpage
 I decided to visit the webpage, and it proved useless.  All it had on it was a sign up form for a mailing list, and upon testing, that literaly just dumped the data as it wasn't full setup.  At this point, I decide to just give up on this website as it didn't seem useful at all.
 ![Image of webpage](/media/htb/trick/DefaultWebpage.png)
