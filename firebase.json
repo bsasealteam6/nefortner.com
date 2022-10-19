@@ -6,6 +6,12 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "trailingSlash": false
+    "trailingSlash": false,
+    "rewrites": [
+      {
+        "source": "/resume",
+        "destination": "/media/resume.pdf"
+      }
+    ]
   }
 }
