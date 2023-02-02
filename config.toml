@@ -416,7 +416,7 @@ googleAnalytics = 'G-7ZSFRQTX7E'
         # owner/repo
         repo = "bsasealteam6/nefortner.com-comments"
         issueTerm = "pathname"
-        label = ""
+        label = "Test"
         lightTheme = "github-light"
         darkTheme = "github-dark"
   [params.verification]
