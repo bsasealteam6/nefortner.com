@@ -340,7 +340,7 @@ googleAnalytics = 'G-7ZSFRQTX7E'
         logoUrl = ""
   #Comment settings (Currently Disabled)
   [params.comment]
-      enable = false
+      enable = true
       # uBlogger NEW | 1.0.0
       # Remark42 comment config
       [params.comment.remark42]
