@@ -412,9 +412,9 @@ googleAnalytics = 'G-7ZSFRQTX7E'
         enable = false
       # uBlogger NEW | 0.2.5 Utterances comment config
       [params.comment.utterances]
-        enable = false
+        enable = true
         # owner/repo
-        repo = ""
+        repo = "bsasealteam6/nefortner.com-comments"
         issueTerm = "pathname"
         label = ""
         lightTheme = "github-light"
