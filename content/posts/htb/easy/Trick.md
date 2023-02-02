@@ -2,17 +2,17 @@
 title: "Trick"
 date: 2022-10-06T12:03:22-07:00
 author: "Nate Fortner"
-draft: true
+draft: false
 ---
 # Opensource
 ## Initial Recon
 ### nmap
-As is my goto for these, I ran nmap to see what was there, as well as adding `trick.htb` to my hosts file.  I used my normal script NmapAutomator (available here: [NmapAutomator](https://github.com/21y4d/nmapAutomator)) to run a battery of tests against it, including nmap (all types of scans), nikto, smtp user enum, and others.  From the results, I saw that it was running an OpenSSH 7.9 Debian ssh server on port 22 TCP, a postfix smtp server on port 25 TCP, a BIND9 dns server on 53 TCP and UDP, and a nginx 1.14.2 HTTP server on port 80.  It also discovered a CVE in the ssh version, SSHtranger Things, but that seemed completely irrelavent as it only applied to SCP client.
+As is my goto for these, I ran nmap to see what was there, as well as adding `trick.htb` to my hosts file.  I used my normal script NmapAutomator (available here: [NmapAutomator](https://github.com/21y4d/nmapAutomator)) to run a battery of tests against it, including nmap (all types of scans), nikto, smtp user enum, and others.  From the results, I saw that it was running an OpenSSH 7.9 Debian ssh server on port 22 TCP, a postfix smtp server on port 25 TCP, a `BIND9` dns server on port 53 TCP and UDP, and a `nginx 1.14.2` HTTP server on port 80.  It also discovered a CVE in the ssh version, SSHtranger Things, but that seemed completely irrelavent as it only applied to SCP client.
 ### Webpage
 I decided to visit the webpage, and it proved useless.  All it had on it was a sign up form for a mailing list, and upon testing, that literaly just dumped the data as it wasn't full setup.  At this point, I decide to just give up on this website as it didn't seem useful at all.
-![Image of webpage](/media/htb/trick/DefaultWebpage.png)
+![Image of webpage](/media/htb/easy/trick/DefaultWebpage.png)
 ### dig
-Since it was running a DNS server, I decided to run `dig` against its hostname.  Just based on prior events, I assumed it was using trick.htb, so I ran the command `dig axfr trick.htb @trick.htb`.  The `@trick.htb` causes it to run against the DNS server at `trick.htb`, and the `axfr` tells dig to ask for the entire zone's records.  This allows me to see an intersting record, a CNAME record pointed at `preprod-payrol.trick.htb`.  When I add this domain to my hosts file and visit it, I see a sign in portal. ![Screenshot of the sign-in page](/media/htb/trick/LoginScreen.png)
+Since it was running a DNS server, I decided to run `dig` against its hostname.  Just based on prior events, I assumed it was using trick.htb, so I ran the command `dig axfr trick.htb @trick.htb`.  The `@trick.htb` causes it to run against the DNS server at `trick.htb`, and the `axfr` tells dig to ask for the entire zone's records.  This allows me to see an intersting record, a CNAME record pointed at `preprod-payrol.trick.htb`.  When I add this domain to my hosts file and visit it, I see a sign in portal. ![Screenshot of the sign-in page](/media/htb/easy/trick/LoginScreen.png)
 ### DNS fuzzing
 After noticing the preprod-*.tricks.com Domain name, I was wondering if there were any other names in that space.  I used `ffuf` to do this, using the command `ffuf -fs 5480 -u http://trick.htb -H "Host: preprod-FUZZ.trick.htb" -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt`, which tries replacing the word FUZZ with all the other options, eventually finding marketing to be a valid URL.  However, for now I will let this rest and return later.
 ### Login Page

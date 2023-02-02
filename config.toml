@@ -40,7 +40,7 @@ googleAnalytics = 'G-7ZSFRQTX7E'
     # Windows v8-10 tile color
     tileColor = "#da532c"
   [params.search]
-    enable = true
+    enable = false
     # type of search engine ("lunr", "algolia")
     type = "lunr"
     # max index length of the chunked content
@@ -339,8 +339,8 @@ googleAnalytics = 'G-7ZSFRQTX7E'
         name = ""
         logoUrl = ""
   #Comment settings (Currently Disabled)
-    [params.page.comment]
-      enable = false
+  [params.page.comment]
+      enable = true
       # uBlogger NEW | 1.0.0
       # Remark42 comment config
       [params.page.comment.remark42]
@@ -412,11 +412,11 @@ googleAnalytics = 'G-7ZSFRQTX7E'
         enable = false
       # uBlogger NEW | 0.2.5 Utterances comment config
       [params.page.comment.utterances]
-        enable = false
+        enable = true
         # owner/repo
-        repo = ""
+        repo = "bsasealteam6/nefortner.com-comments"
         issueTerm = "pathname"
-        label = ""
+        label = "Test"
         lightTheme = "github-light"
         darkTheme = "github-dark"
   [params.verification]
@@ -517,14 +517,14 @@ googleAnalytics = 'G-7ZSFRQTX7E'
     url = '/posts/'
     title = 'Blog Posts'
     weight = 1
-  [[menu.main]]
-    identifier = 'about'
-    pre = ''
-    post = ''
-    name = 'About'
-    url = '/about/'
-    title = 'About Nate'
-    weight = 2
+#  [[menu.main]]
+#    identifier = 'about'
+#    pre = ''
+#    post = ''
+#    name = 'About'
+#    url = '/about/'
+#    title = 'About Nate'
+#    weight = 2
   [[menu.main]]
     identifier = 'resume'
     pre = ''
