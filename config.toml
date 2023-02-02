@@ -339,11 +339,11 @@ googleAnalytics = 'G-7ZSFRQTX7E'
         name = ""
         logoUrl = ""
   #Comment settings (Currently Disabled)
-  [params.comment]
+    [params.page.comment]
       enable = false
       # uBlogger NEW | 1.0.0
       # Remark42 comment config
-      [params.comment.remark42]
+      [params.page.comment.remark42]
         enable = false
         # the location of your server with Remark42
         host = "https://remark.example.com"
@@ -356,13 +356,13 @@ googleAnalytics = 'G-7ZSFRQTX7E'
         # enable or disable smiley support
         emailSubscribe = "true"
       # Disqus comment config
-      [params.comment.disqus]
+      [params.page.comment.disqus]
         # uBlogger NEW | 0.1.1
         enable = false
         # Disqus shortname to use Disqus in posts
         shortname = ""
       # Gitalk comment config
-      [params.comment.gitalk]
+      [params.page.comment.gitalk]
         # uBlogger NEW | 0.1.1
         enable = false
         owner = ""
@@ -370,7 +370,7 @@ googleAnalytics = 'G-7ZSFRQTX7E'
         clientId = ""
         clientSecret = ""
       # Valine comment config
-      [params.comment.valine]
+      [params.page.comment.valine]
         enable = false
         appId = ""
         appKey = ""
@@ -391,14 +391,14 @@ googleAnalytics = 'G-7ZSFRQTX7E'
         # "assets/data/emoji/"
         emoji = ""
       # Facebook comment config
-      [params.comment.facebook]
+      [params.page.comment.facebook]
         enable = false
         width = "100%"
         numPosts = 10
         appId = ""
         languageCode = ""
       # uBlogger NEW | 0.2.0 Telegram comments config
-      [params.comment.telegram]
+      [params.page.comment.telegram]
         enable = false
         siteID = ""
         limit = 5
@@ -408,10 +408,10 @@ googleAnalytics = 'G-7ZSFRQTX7E'
         dislikes = false
         outlined = false
       # uBlogger NEW | 0.2.0 Commento comment config
-      [params.comment.commento]
+      [params.page.comment.commento]
         enable = false
       # uBlogger NEW | 0.2.5 Utterances comment config
-      [params.comment.utterances]
+      [params.page.comment.utterances]
         enable = false
         # owner/repo
         repo = ""
