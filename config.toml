@@ -551,15 +551,15 @@ googleAnalytics = 'G-7ZSFRQTX7E'
     url = '/resume/'
     title = 'Nate Resume'
     weight = 3
-  # [[menu.main]]
-  #   parent = 'posts'
-  #   identifier = 'conferences'
-  #   pre = ''
-  #   post = ''
-  #   name = 'Conferences'
-  #   url = '/posts/conferences/'
-  #   title = 'Conferences'
-  #   weight = 1
+  [[menu.main]]
+    parent = 'posts'
+    identifier = 'conferences'
+    pre = ''
+    post = ''
+    name = 'Conferences'
+    url = '/categories/conferences/'
+    title = 'Conferences'
+    weight = 1
 [minify]
   disableXML = true
   minifyOutput = true

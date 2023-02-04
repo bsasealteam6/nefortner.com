@@ -1,8 +1,10 @@
 ---
-title: "Trick"
+title: "Hack the Box Machine: Trick"
 date: 2022-10-06T12:03:22-07:00
-author: "Nate Fortner"
+author: Nate Fortner
 draft: false
+categories:
+  - HTB
 ---
 # Opensource
 ## Initial Recon
