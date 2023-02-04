@@ -11,7 +11,7 @@ googleAnalytics = 'G-7ZSFRQTX7E'
 
 [params]
   author = 'Nate Fortner'
-  pathPrompt = 'nate@nefortner.com'
+  pathPrompt = 'website@nefortner.com'
   version = '2.0.X'
 
   footerCopyrightName = 'Nate Fortner'
