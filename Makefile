@@ -3,4 +3,4 @@ all: deploy
 deploy:
 	hugo && firebase deploy
 test:
-	hugo && firebase hosting\:channel\:deploy quickTest
+	hugo && firebase deploy quickTest
