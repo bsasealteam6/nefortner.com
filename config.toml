@@ -412,13 +412,31 @@ googleAnalytics = 'G-7ZSFRQTX7E'
         enable = false
       # uBlogger NEW | 0.2.5 Utterances comment config
       [params.page.comment.utterances]
-        enable = true
+        enable = false
         # owner/repo
         repo = "bsasealteam6/nefortner.com-comments"
         issueTerm = "pathname"
         label = "Test"
         lightTheme = "github-light"
         darkTheme = "github-dark"
+      [params.page.comment.giscus]
+        # You can refer to the official documentation of giscus to use the following configuration.
+        # 你可以参考官方文档来使用下列配置
+        enable = true
+        repo = "bsasealteam6/nefortner.com"
+        repoId = "R_kgDOHZB8qg"
+        category = "Comments"
+        categoryId = "DIC_kwDOHZB8qs4CT_5s"
+        # automatically adapt the current theme i18n configuration when empty
+        # 为空时自动适配当前主题 i18n 配置
+        lang = ""
+        mapping = "pathname"
+        reactionsEnabled = "1"
+        emitMetadata = "0"
+        inputPosition = "bottom"
+        lazyLoading = false
+        lightTheme = "light"
+        darkTheme = "dark"
   [params.verification]
     # google = ""
     # bing = ""
