@@ -198,6 +198,7 @@ googleAnalytics = 'G-7ZSFRQTX7E'
     # XMPP = ""
     # Matrix = ""
     # Bilibili = ""
+    HackTheBox = "bsasealteam6"
     Email = "contact@nefortner.com"
     RSS = true # uBlogger NEW | 0.2.0
   [params.page]
