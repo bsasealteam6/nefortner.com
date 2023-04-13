@@ -18,7 +18,7 @@ jobs:
         with:
           repository: 'bsasealteam6/resume'
           path: resume
-      - uses: repaction/texlive@main
+      - uses: xu-cheng/latex-action@v2
         with:
           working_directory: resume
           root_file: resume.tex
