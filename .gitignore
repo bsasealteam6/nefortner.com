@@ -67,6 +67,6 @@ node_modules/
 
 #Hugo build directories
 public
-resources
+resources/
 #VScode junk
 .vscode
