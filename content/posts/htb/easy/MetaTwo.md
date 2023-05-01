@@ -2,13 +2,13 @@
 title: MetaTwo
 date: 2022-11-09T17:33:38-08:00
 author: Nate Fortner
-draft: true
+draft: false
 katex: true
 type: default
 keywords:
   - MetaTwo
   - HackTheBox
-lastmod: 2022-11-17T20:58:50.333Z
+lastmod: 2023-05-01T22:56:11.351Z
 ---
 
 # MetaTwo
