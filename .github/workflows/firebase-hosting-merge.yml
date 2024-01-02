@@ -18,6 +18,7 @@ jobs:
         with:
           repository: 'bsasealteam6/resume'
           path: resume
+          ref: plain
       - uses: xu-cheng/latex-action@v2
         with:
           working_directory: resume
