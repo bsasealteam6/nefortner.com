@@ -14,7 +14,7 @@
       },
       {
         "source": "/pcr",
-        "destination": "/media/pcr.pdf"
+        "destination": "/media/PCR.pdf"
       }
     ]
   }
