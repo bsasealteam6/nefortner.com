@@ -11,6 +11,10 @@
       {
         "source": "/resume",
         "destination": "/media/resume.pdf"
+      },
+      {
+        "source": "/pcr",
+        "destination": "/media/pcr.pdf"
       }
     ]
   }

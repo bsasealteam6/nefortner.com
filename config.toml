@@ -536,14 +536,14 @@ googleAnalytics = 'G-7ZSFRQTX7E'
     url = '/posts/'
     title = 'Blog Posts'
     weight = 1
-#  [[menu.main]]
-#    identifier = 'about'
-#    pre = ''
-#    post = ''
-#    name = 'About'
-#    url = '/about/'
-#    title = 'About Nate'
-#    weight = 2
+ [[menu.main]]
+   identifier = 'about'
+   pre = ''
+   post = ''
+   name = 'About'
+   url = '/about/'
+   title = 'About Nate'
+   weight = 2
   [[menu.main]]
     identifier = 'resume'
     pre = ''
@@ -561,6 +561,14 @@ googleAnalytics = 'G-7ZSFRQTX7E'
     url = '/categories/conferences/'
     title = 'Conferences'
     weight = 1
+  [[menu.main]]
+    identifier="pcr"
+    pre=''
+    post=''
+    name="PCR Planning"
+    url="/pcr"
+    title="PCR Planning"
+    weight=4
 [minify]
   disableXML = true
   minifyOutput = true
