@@ -561,14 +561,6 @@ googleAnalytics = 'G-7ZSFRQTX7E'
     url = '/categories/conferences/'
     title = 'Conferences'
     weight = 1
-  [[menu.main]]
-    identifier="pcr"
-    pre=''
-    post=''
-    name="PCR Planning"
-    url="/pcr"
-    title="PCR Planning"
-    weight=4
 [minify]
   disableXML = true
   minifyOutput = true
