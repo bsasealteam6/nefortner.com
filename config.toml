@@ -10,7 +10,7 @@ googleAnalytics = 'G-7ZSFRQTX7E'
 
 
 [params]
-  [author]
+  [params.author]
     name  = 'Nate Fortner'
   pathPrompt = 'website@nefortner.com'
   version = '2.0.X'
@@ -524,7 +524,7 @@ googleAnalytics = 'G-7ZSFRQTX7E'
   filename = "sitemap.xml"
   priority = 0.5
 [privacy]
-  [privacy.twitter]
+  [privacy.x]
     enableDNT = true
   [privacy.youtube]
     privacyEnhanced = true
